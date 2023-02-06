@@ -68,3 +68,9 @@ function addNum(a: any, b: any): number {
 }
 
 console.log(addNum(2, 3));
+
+//Void
+
+function display(temp: string | number): void {
+  console.log(temp);
+}

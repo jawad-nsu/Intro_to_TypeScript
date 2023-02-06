@@ -43,3 +43,7 @@ function addNum(a, b) {
     return a + b;
 }
 console.log(addNum(2, 3));
+//Void
+function display(temp) {
+    console.log(temp);
+}
