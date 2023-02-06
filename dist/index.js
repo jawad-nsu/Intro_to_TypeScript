@@ -47,3 +47,16 @@ console.log(addNum(2, 3));
 function display(temp) {
     console.log(temp);
 }
+const AmazonUser = {
+    id: 4,
+    name: 'Bella',
+};
+const addition = (a, b) => a + b;
+const subtraction = (a, b) => a - b;
+//Generics
+function getArr(items) {
+    return new Array().concat(items);
+}
+const numberArr = getArr([1, 2, 3]);
+const stringArr = getArr(['a', 'b', 'c', 'd']);
+stringArr.push('size');

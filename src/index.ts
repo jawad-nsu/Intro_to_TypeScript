@@ -70,7 +70,38 @@ function addNum(a: any, b: any): number {
 console.log(addNum(2, 3));
 
 //Void
-
 function display(temp: string | number): void {
   console.log(temp);
 }
+
+//Interfaces
+interface UserInterface {
+  id: number;
+  name: string;
+  address?: string;
+}
+
+const AmazonUser: UserInterface = {
+  id: 4,
+  name: 'Bella',
+};
+
+//Interfaces for functions
+
+interface MathFunc {
+  (x: number, y: number): number;
+}
+
+const addition: MathFunc = (a: number, b: number): number => a + b;
+const subtraction: MathFunc = (a: number, b: number): number => a - b;
+
+//Generics
+
+function getArr<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+const numberArr = getArr<number>([1, 2, 3]);
+const stringArr = getArr<string>(['a', 'b', 'c', 'd']);
+
+stringArr.push('size');
